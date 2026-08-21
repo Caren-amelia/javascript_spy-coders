@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    table {
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 4px;
+}
+
+td:first-child {
+    width: 100px;
+}
+
+ </style>
+    
+</head>
+<body>
+<form>
+    <table>
+
+        <!-- Heading -->
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+
+        <!-- First Name -->
+        <tr>
+            <td><label for="firstName">First Name:</label></td>
+            <td>
+                <input type="text" id="firstName" name="firstName"
+                       placeholder="Enter first name">
+            </td>
+        </tr>
+
+        <!-- Last Name -->
+        <tr>
+            <td><label for="lastName">Last Name:</label></td>
+            <td>
+                <input type="text" id="lastName" name="lastName"
+                       placeholder="Enter last name">
+            </td>
+        </tr>
+
+        <!-- Email -->
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter Email Address">
+            </td>
+        </tr>
+
+        <!-- Password -->
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+                <input type="password" id="password" name="password">
+            </td>
+        </tr>
+
+        <!-- Gender -->
+        <tr>
+            <td><label>Gender:</label></td>
+            <td>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </td>
+        </tr>
+
+        <!-- Age -->
+        <tr>
+            <td><label for="age">Age:</label></td>
+            <td>
+                <input type="number" id="age" name="age">
+            </td>
+        </tr>
+
+        <!-- Preferences -->
+        <tr>
+            <td><label>Preferences:</label></td>
+            <td>
+                <label for="acrylic">Acrylic Painting</label>
+                <input type="checkbox" id="acrylic" name="preferences" value="acrylic">
+
+                <label for="oil">Oil Painting</label>
+                <input type="checkbox" id="oil" name="preferences" value="oil">
+
+                <label for="watercolor">Water Color Painting</label>
+                <input type="checkbox" id="watercolor" name="preferences" value="watercolor">
+            </td>
+        </tr>
+
+        <!-- Occupation -->
+        <tr>
+            <td><label for="occupation">Occupation:</label></td>
+            <td>
+                <select id="occupation" name="occupation">
+                    <option value="Student">Student</option>
+                    <option value="Employee">Employee</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+
+        <!-- Bio -->
+        <tr>
+            <td style="vertical-align: top;">
+                <label for="bio">Bio:</label>
+            </td>
+            <td>
+                <textarea id="bio" name="bio" rows="10" cols="30"></textarea>
+            </td>
+        </tr>
+
+        <!-- Buttons -->
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
